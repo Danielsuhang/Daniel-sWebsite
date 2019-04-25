@@ -1,0 +1,57 @@
+@media only screen and (max-width: 800px) {
+    #profile_pic {
+        display: none;
+    }
+}
+@media only screen and (min-width: 800px) {
+    #smaller_profile_pic {
+        display: none;
+    }
+}
+.holder {   
+    width: auto;
+    display: inline-block;    
+}
+.holder img {
+    width: 30%;
+    height: auto;
+}
+.row_container {
+    display: flex;
+    flex-direction: row;
+}
+.flex_container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+/* Testing box overflow */
+.frame {
+    position:relative;
+    width: 100%;
+    overflow:hidden;
+    flex-flow:row wrap;
+    /*justify-content: space-between; */
+    align-items: stretch;
+    
+    -webkit-justify-content: flex;
+    -moz-justify-content: -moz-flex;
+    justify-content: flex;
+    
+    display: -webkit-box; /* Safari */ 
+    display: -moz-box; /* Firefox 21- */
+    display: -ms-flexbox; /* IE 10+ */
+    display: -webkit-flex; /* Chrome */
+    display: flex; /* Standard (Firefox 22+) */
+    
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+}
+
+
+
