@@ -7,6 +7,10 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MainComponent } from './main/main.component';
 
+
+import {MatCardModule} from '@angular/material/card';
+
+
 import {FirebaseModule} from 'angular-firebase';
 
 import { HttpClientModule } from '@angular/common/http';
@@ -30,7 +34,8 @@ const appRoutes: Routes = [
     RouterModule.forRoot(
       appRoutes
     ), 
-    BrowserModule, FirebaseModule, HttpClientModule, EmbedVideo.forRoot()
+    BrowserModule, FirebaseModule, HttpClientModule, EmbedVideo.forRoot(),
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
